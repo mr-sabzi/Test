@@ -21,7 +21,7 @@ function MainProduct() {
       star: "stars-2",
       com: "3.5/",
       comE: "5",
-      price: "$240",
+
       priceC: "$260",
       off: "-20%",
       isSpecial: true,
@@ -45,7 +45,7 @@ function MainProduct() {
       star: "stars-4",
       com: "4.5/",
       comE: "5",
-      price: "$130",
+
       priceC: "$160",
       off: "-30%",
       isSpecial: true,
@@ -61,7 +61,7 @@ function MainProduct() {
       star: "stars2-1",
       com: "5.0/",
       comE: "5",
-      price: "$212",
+
       priceC: "$232",
       off: "-20%",
       isSpecial: true,
@@ -101,6 +101,31 @@ function MainProduct() {
       isSpecial: false,
     },
   ];
+  const updatedProducts = products.map((item) => {
+    if (item.off && item.priceC) {
+      const offNumber = parseFloat(item.off.replace("-", "").replace("%", ""));
+      const originalPrice = parseFloat(item.priceC.replace("$", ""));
+      const discountedPrice = originalPrice * (1 - offNumber / 100);
+      return {
+        ...item,
+        price: `$${discountedPrice.toFixed(0)}`,
+      };
+    }
+    return item;
+  });
+
+  const updatedProducts2 = products2.map((item) => {
+    if (item.off && item.priceC) {
+      const offNumber = parseFloat(item.off.replace("-", "").replace("%", ""));
+      const originalPrice = parseFloat(item.priceC.replace("$", ""));
+      const discountedPrice = originalPrice * (1 - offNumber / 100);
+      return {
+        ...item,
+        price: `$${discountedPrice.toFixed(0)}`,
+      };
+    }
+    return item;
+  });
 
   return (
     <>
@@ -109,33 +134,27 @@ function MainProduct() {
           <div className=" product-1 peoduct-1zir">
             <strong className="product-1-p">NEW ARRIVALS</strong>
             <div className="product-1-dkol">
-              {products.map((item) => (
-                <>
-                  <div className="product-1-dps">
-                    <img src={item.img} alt="" className="product-1-dps-imgs" />
-                    <p className="product-1-dps-bold">{item.name}</p>
-                    <div className="product-1-dps-divnazar">
-                      {/* <div className=""> */}
-                      <Icon name={item.star} />
-                      {/* </div> */}
-                      {/* <div className=""> */}
-                      <span className="product-1-dps-divnazar-span">
-                        {item.com}
-                        <span className="shadowspan">{item.comE}</span>
-                      </span>
-                      {/* </div> */}
-                    </div>
-                    <div className="product-1-price">
-                      <span className="bolddddd  ">{item.price}</span>
-                      {item.isSpecial && (
-                        <s className="bolddddd shadowspan">{item.priceC}</s>
-                      )}
-                      {item.isSpecial && (
-                        <span className="product-off">{item.off}</span>
-                      )}
-                    </div>
+              {updatedProducts.map((item) => (
+                <div className="product-1-dps" key={item.id}>
+                  <img src={item.img} alt="" className="product-1-dps-imgs" />
+                  <p className="product-1-dps-bold">{item.name}</p>
+                  <div className="product-1-dps-divnazar">
+                    <Icon name={item.star} />
+                    <span className="product-1-dps-divnazar-span">
+                      {item.com}
+                      <span className="shadowspan">{item.comE}</span>
+                    </span>
                   </div>
-                </>
+                  <div className="product-1-price">
+                    <span className="bolddddd">{item.price}</span>
+                    {item.isSpecial && (
+                      <s className="bolddddd shadowspan">{item.priceC}</s>
+                    )}
+                    {item.isSpecial && (
+                      <span className="product-off">{item.off}</span>
+                    )}
+                  </div>
+                </div>
               ))}
             </div>
             <div className="product-1-dbtn">
@@ -152,33 +171,27 @@ function MainProduct() {
           <div className=" product-1">
             <strong className="product-1-p">top selling</strong>
             <div className="product-1-dkol">
-              {products2.map((item) => (
-                <>
-                  <div className="product-1-dps">
-                    <img src={item.img} alt="" className="product-1-dps-imgs" />
-                    <p className="product-1-dps-bold">{item.name}</p>
-                    <div className="product-1-dps-divnazar">
-                      {/* <div className=""> */}
-                      <Icon name={item.star} />
-                      {/* </div> */}
-                      {/* <div className=""> */}
-                      <span className="product-1-dps-divnazar-span">
-                        {item.com}
-                        <span className="shadowspan">{item.comE}</span>
-                      </span>
-                      {/* </div> */}
-                    </div>
-                    <div className="product-1-price">
-                      <span className="bolddddd  ">{item.price}</span>
-                      {item.isSpecial && (
-                        <s className="bolddddd shadowspan">{item.priceC}</s>
-                      )}
-                      {item.isSpecial && (
-                        <span className="product-off">{item.off}</span>
-                      )}
-                    </div>
+              {updatedProducts2.map((item) => (
+                <div className="product-1-dps" key={item.id}>
+                  <img src={item.img} alt="" className="product-1-dps-imgs" />
+                  <p className="product-1-dps-bold">{item.name}</p>
+                  <div className="product-1-dps-divnazar">
+                    <Icon name={item.star} />
+                    <span className="product-1-dps-divnazar-span">
+                      {item.com}
+                      <span className="shadowspan">{item.comE}</span>
+                    </span>
                   </div>
-                </>
+                  <div className="product-1-price">
+                    <span className="bolddddd">{item.price}</span>
+                    {item.isSpecial && item.priceC && (
+                      <s className="bolddddd shadowspan">{item.priceC}</s>
+                    )}
+                    {item.isSpecial && item.off && (
+                      <span className="product-off">{item.off}</span>
+                    )}
+                  </div>
+                </div>
               ))}
             </div>
             <div className="product-1-dbtn">
@@ -193,22 +206,18 @@ function MainProduct() {
       <div className="class">
         <div className="class-center">
           <div className="class-p">
-          <strong className="">BROWSE BY DREES STYLE</strong>
-         </div>
+            <strong className="">BROWSE BY DREES STYLE</strong>
+          </div>
           <div className="class-dkol">
             <div className="class-dkol-dbp">
-
-
-              <div className="class-dkol-dbLR bacimgBL" >
-                <h1  className="classppppppp">Casual</h1>
+              <div className="class-dkol-dbLR bacimgBL">
+                <h1 className="classppppppp">Casual</h1>
               </div>
               <div className="class-dkol-dbRL bacimgBR">
                 <h1 className="classppppppp">Formal</h1>
               </div>
             </div>
             <div className="class-dkol-dbp">
-
-
               <div className="class-dkol-dbRL bacimgPL">
                 <h1 className="classppppppp">Party</h1>
               </div>

@@ -1,14 +1,15 @@
-import Header from "../components/ui/header"
-import Main from "../components/ui/Main"
-import MainSlider from "../components/ui/MainSlider"
+import Header from "../components/ui/header";
+import Main from "../components/ui/Main";
+import Footer from "../components/ui/Footer";
 
 function Home() {
-    return(<>
-        <Header/>
-        <Main/>
-        <MainSlider/>
-        <p>home</p>
-        </>
-    )
+  return (
+    <>
+      <Header />
+      <Main />
+
+      <Footer />
+    </>
+  );
 }
-export default Home
+export default Home;

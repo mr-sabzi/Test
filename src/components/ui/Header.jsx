@@ -95,14 +95,15 @@ function Header() {
                     International Brands
                   </p>
                 </div>
-                <div className="header-3-items-1-status-s-bord">
-                  <h1 className="header-3-items-1-status-s-v  ">2,000+</h1>
-                  <p className="header-3-items-1-status-s-de">
-                    High-Quality Products
-                  </p>
-                </div>
-                <div className="header-3-items-1-status-s ">
+                <div className="header-3-items-1-status-s-bord  ">
                   <div>
+                  <h1 className="header-3-items-1-status-s-v   ">2,000+</h1>
+                  <p className="header-3-items-1-status-s-de avalchin">
+                    High-Quality Products
+                  </p></div>
+                </div>
+                <div className="   sadsad ">
+                  <div className="divvasat">
                     <h1 className="header-3-items-1-status-s-v ">30,000+</h1>
                     <p className=" header-3-items-1-status-s-de">
                       Happy Customers
