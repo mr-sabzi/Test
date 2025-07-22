@@ -84,8 +84,10 @@ function MainDitals({ product, product2 }) {
                           <div className="distalsha-mtn">
                             <strong className="strogessssa">{product.name}</strong>
                             <div className="distalsha-mtn-stars">
+                              <div className="starhaaa">
                               <Icon name={product.star} />
-                              <span>
+                              </div>
+                              <span className="lsadeipmfk">
                                 {product.com}
                                 <span className="shadowspan">{product.comE}</span>
                               </span>

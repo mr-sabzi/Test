@@ -21,7 +21,7 @@ function Footer() {
           </h2>
           <div className="bala-form">
             <div className="bala-form-inp">
-              <span>
+              <span className="emailicon">
                 <Icon name='email'/>
               </span>
             <input

@@ -7,7 +7,7 @@ function MainDetailProduct() {
       <div className="kolll">
           <div className="maindetalproduct">
               <strong className="product-1-p">You might also like</strong>
-              <div className="product-1-dkol">
+              <div className="maindetalproducthame">
                   {updatedProducts3.map((item) => (
                     <div className="product-1-dps1">
                         <img src={item.img} alt="" className="product-1-dps-imgs" />

@@ -38,7 +38,7 @@ export const dataComm = [
     name: "Samantha D.",
     text: "I absolutely love this t-shirt! The design is unique and the fabric feels so comfortable. As a fellow designer, I appreciate the attention to detail. It`s become my favorite go-to shirt.",
     date: "Posted on August 14, 2023",
-    stars: "stars-1",
+    stars: "stars2-4",
     tik: "tik",
   },
   {
@@ -63,7 +63,6 @@ export const dataComm = [
     text: "As a UI/UX enthusiast, I value simplicity and functionality. This t-shirt not only represents those principles but also feels great to wear. It's evident that the designer poured their creativity into making this t-shirt stand out.",
     date: "Posted on August 17, 2023",
     stars: "stars2-2",
-
     tik: "tik",
   },
   {
@@ -79,7 +78,7 @@ export const dataComm = [
     name: "Ava H.",
     text: "I'm not just wearing a t-shirt; I'm wearing a piece of design philosophy. The intricate details and thoughtful layout of the design make this shirt a conversation starter.",
     date: "Posted on August 19, 2023",
-    stars: "stars-1",
+    stars: "stars2-4",
     tik: "tik",
   },
 ];

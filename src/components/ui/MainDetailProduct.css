@@ -6,6 +6,7 @@
 
 .maindetalproduct {
     width: 86%;
+    height: 660px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -27,4 +28,13 @@
 
 .product-1-dps1:hover {
     transform: scale(1.05);
+}
+.maindetalproducthame{
+        width: 100%;
+    margin-top: 20px;
+    height: 80%;
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
 }

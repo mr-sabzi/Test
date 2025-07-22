@@ -76,6 +76,7 @@
     height: 19px;
     border: none transparent;
     outline: none;
+    cursor: pointer;
 }
 #header-2-items-d2-ul {
     display: flex;

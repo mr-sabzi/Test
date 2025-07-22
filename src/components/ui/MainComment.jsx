@@ -39,7 +39,9 @@ function MainComment() {
                 <>
                   <div className="MainCom-comm-comm-hame">
                     <div className="mtncomm">
+                      <span>
                       <Icon name={item.stars} />
+                      </span>
                       <div className="commhmtn">
                         <h3>{item.name}</h3>
                         <span className="positionssss">
@@ -64,7 +66,7 @@ function MainComment() {
             </div>
 
             <div className="btnnnnnnn">
-              <a href="">
+              <a href=""  className="kslnd">
                 <button className="product-1-dbtn-btn">
                   Load More Reviews
                 </button>
