@@ -1,101 +1,111 @@
-.product{
+.product {
     width: 100%;
     height: 1588PX;
-    /* background-color: red; */
-
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    
 }
-.product-center{
+
+.product-center {
     width: 81.2%;
     height: 100%;
-
-        display: flex;
-    /* justify-content: center; */
+    display: flex;
     flex-direction: column;
-        align-items: center;
+    align-items: center;
 
 }
-.product-1{
+
+.product-1 {
     width: 100%;
     height: 50%;
-
     display: flex;
     align-items: center;
     flex-direction: column;
-
-
-
-}product-1-price
-.peoduct-1zir{
-    border-bottom:solid 2px #0000001A ;
 }
-.product-1-p{
+
+.peoduct-1zir {
+    border-bottom: solid 2px #0000001A;
+}
+
+.product-1-p {
     font-size: 40px;
     margin-top: 50px;
-
-
 }
-.product-1-dkol{
+
+.product-1-dkol {
     width: 100%;
     margin-top: 20px;
     height: 70%;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
-
 }
-.product-1-dps{
+
+.product-1-dps {
     width: 23.8%;
-    height:90% ;
+    height: 90%;
     display: flex;
     flex-direction: column;
-    justify-content:space-between ;
-
-
+    justify-content: space-between;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    text-decoration: none;
     border-radius: 25px;
+    color: black;
 }
-.product-1-dps-imgs{
+
+.baccc {
+    transition: transform 0.2s ease;
+    cursor: pointer;
+}
+
+.baccc:hover {
+    transform: scale(1.02);
+}
+
+.product-1-dps:hover {
+    transform: scale(1.05);
+}
+
+.product-1-dps-imgs {
     width: 100%;
     height: 340px;
-        object-fit: cover;
-
-          border-radius: 20px;
-
+    object-fit: cover;
+    border-radius: 20px;
 }
-.product-1-dps-divnazar{
 
+.product-1-dps-divnazar {
     width: 51%;
     height: fit-content;
     display: flex;
     justify-content: space-between;
 }
-.product-1-dps-bold{
- font-size:20px ;   
 
+.product-1-dps-bold {
+    font-size: 20px;
 }
-.product-1-price{
-    width: 57.5%;
 
+.product-1-price {
+    width: 57.5%;
     display: flex;
     justify-content: space-between;
-
 }
-.bolddddd{
+
+.bolddddd {
     font-size: 24px;
-
 }
 
-.shadowspan{
+.sakdlmjei {
+    width: 50%;
+}
+
+.shadowspan {
     color: #00000066;
 }
 
-.product-off{
-    background-color:#FF33331A ;
+.product-off {
+    background-color: #FF33331A;
     border-radius: 25px;
     width: 50px;
     display: flex;
@@ -103,104 +113,100 @@
     align-items: center;
     color: #FF3333;
 }
-.product-1-dbtn{
 
+.product-1-dbtn {
     width: 20%;
     height: 9%;
-
-
 }
-.product-1-dbtn-btn{
+
+.product-1-dbtn-btn {
     width: 100%;
     height: 80%;
     border-radius: 30px;
     background-color: #ffffff;
-    color:  #000;
-    border: solid 1.5px #0000001A  ;
+    color: #000;
+    border: solid 1.5px #0000001A;
     cursor: pointer;
 }
-.class{
-        width: 100%;
+
+.product-1-dbtn-btn:hover {
+    background-color: #000000;
+    color: #fff;
+    border: solid 1.5px #ffffff;
+}
+
+.class {
+    width: 100%;
     height: 850pX;
-
-
     display: flex;
     justify-content: center;
-
 }
-.class-center{
-display: flex;
 
+.class-center {
+    display: flex;
     width: 81.2%;
     height: 100%;
-flex-direction: column;
-align-items: center;
+    flex-direction: column;
+    align-items: center;
     background-color: #F0F0F0;
     border-radius: 25px;
-
-
 }
 
-.class-dkol{
+.class-dkol {
     width: 90%;
     height: 85%;
-
-
-
 }
 
-.class-dkol-dbp{
-width: 100%;
-height: 47%;
-/* border: solid 1px green; */
-
-display: flex;
-justify-content: space-between;
+.class-dkol-dbp {
+    width: 100%;
+    height: 47%;
+    display: flex;
+    justify-content: space-between;
 }
-.class-dkol-dbLR{
+
+.class-dkol-dbLR {
     width: 32.8%;
     height: 95%;
     border-radius: 25px;
-
-    
 }
-.class-p{
+
+.class-p {
     width: 100%;
     height: 15%;
     display: flex;
-    justify-content:center ;
+    justify-content: center;
     align-items: center;
     font-size: 40px;
 
 }
-.class-dkol-dbRL{
+
+.class-dkol-dbRL {
 
     width: 66%;
     height: 95%;
-        border-radius: 25px;
-
-}   
-.bacimgBL{
-        background: url("../assets/image/image 11.png") 
-        no-repeat right top / cover;
+    border-radius: 25px;
 
 }
-.bacimgBR{
-        background: url("../assets/image/image 13 (1).png") 
-        no-repeat right top / cover;
+
+.bacimgBL {
+    background: url("../assets/image/image 11.png") no-repeat right top / cover;
+}
+
+.bacimgBR {
+    background: url("../assets/image/image 13 (1).png") no-repeat right top / cover;
 
 }
-.bacimgPL{
-        background: url("../assets/image/image 12.png") 
-        no-repeat right top / cover;
-}
-.bacimgPR{
-        background: url("../assets/image/image 14.png") 
-        no-repeat right top / cover;
-}
-.classppppppp{
-        position: relative;
-        left: 20px;
-        top: 31px;
 
+.bacimgPL {
+    background: url("../assets/image/image 12.png") no-repeat right top / cover;
+}
+
+.bacimgPR {
+    background: url("../assets/image/image 14.png") no-repeat right top / cover;
+}
+
+.classppppppp {
+    position: relative;
+    left: 20px;
+    top: 31px;
 }

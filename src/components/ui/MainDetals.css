@@ -1,0 +1,209 @@
+.kol {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Maindetalskol {
+    width: 86%;
+}
+
+.ParentBiger {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+}
+
+.ParentBiger-ul {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    height: 100%;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.detal {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: 500px;
+}
+
+.aksha {
+    width: 10%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.aksha-aks {
+    width: 100%;
+    height: 32.5%;
+    border-radius: 25px;
+}
+
+.aksha-aks-img {
+    width: 100%;
+    border-radius: 25px;
+    height: 100%;
+}
+
+.aks {
+    width: 38%;
+    height: 100%;
+    background-color: #F0EEED;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.aks-img {
+    width: 80%;
+    height: 100%;
+}
+
+.distalsha {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.strogessssa {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.distalsha-mtn {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 45%;
+    border-bottom: solid 2px #F2F0F1;
+    justify-content: space-around;
+}
+
+.distalsha-mtn-stars {
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.distalsha-mtn-price {
+    width: 27%;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.distalsha-mtn-p {
+    color: #00000099;
+    height: 30%;
+    font-size: 16.3px;
+}
+
+.distalsha-colors {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 18%;
+    justify-content: space-around;
+    border-bottom: solid 2px #F2F0F1;
+}
+
+.asdsad {
+    margin: 0;
+}
+
+.distalsha-colors-colors {
+    width: 23%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.distalsha-size {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 22%;
+    border-bottom: solid 2px #F2F0F1;
+}
+
+.distalsha-size-size {
+    width: 55%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btnSize {
+    border: none;
+    cursor: pointer;
+    border-radius: 25px;
+    width: 24%;
+    height: 39px;
+}
+
+.distalsha-muchbtn {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+
+}
+
+.distalsha-muchbtn-count {
+    width: 25%;
+    height: 70%;
+    background-color: #F0F0F0;
+    display: flex;
+    border-radius: 25px;
+    justify-content: space-between;
+
+}
+
+.distalsha-muchbtn-count-btn {
+    width: 30%;
+    height: 100%;
+    border-radius: 25px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.distalsha-muchbtn-count-count {
+    width: 5%;
+    height: 100%;
+    font-size: large;
+    position: relative;
+    bottom: -1px;
+}
+
+.distalsha-muchbtn-btn {
+    height: 70%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 25px;
+    background-color: black;
+    width: 60%;
+    color: white;
+    border: none;
+}
+
+.Linketohome {
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}

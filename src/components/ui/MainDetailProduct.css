@@ -1,0 +1,30 @@
+.kolll {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.maindetalproduct {
+    width: 86%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 150px;
+}
+
+.product-1-dps1 {
+    width: 23.8%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    text-decoration: none;
+    border-radius: 25px;
+    color: black;
+}
+
+.product-1-dps1:hover {
+    transform: scale(1.05);
+}
